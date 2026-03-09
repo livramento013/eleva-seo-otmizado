@@ -1,0 +1,32 @@
+# ==========================================
+# ROBOTS.TXT - ELEVA DIGITAL (2026)
+# Estratégia de Escala Nacional - Pedro Allan
+# ==========================================
+
+User-agent: *
+Allow: /
+Allow: /?cidade=*
+Allow: /?utm_term=*
+
+# Bloquear pastas que não devem ser indexadas
+Disallow: /admin/
+Disallow: /config/
+Disallow: /private/
+Disallow: /temp/
+
+# Bloquear arquivos específicos que não ajudam no SEO
+Disallow: /*.php$
+Disallow: /*.json$
+
+# Otimização de Imagens (Permitir tudo que for WebP)
+Allow: /*.webp$
+
+# Sitemap Principal
+Sitemap: https://elevadigital.site/sitemap.xml
+
+# Evitar que bots de spam consumam seu processamento
+User-agent: CCBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /

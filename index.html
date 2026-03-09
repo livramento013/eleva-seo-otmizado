@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title id="dynamic-title">Eleva Digital | Engenharia de Sites e SEO de Alta Performance</title>
+    <meta name="description" id="dynamic-desc" content="A Eleva Digital cria infraestruturas digitais ultra-rápidas. Performance 100/100 PageSpeed sob gestão estratégica de Pedro Allan.">
+    <meta name="keywords" content="Pedro Allan Rodigues, Eleva Digital, criar site profissional, SEO industrial, Baixada Santista, Carapicuíba, Santos, Next.js, performance 100 PageSpeed">
+    <meta name="author" content="Pedro Allan Rodrigues - Founder">
+    <link rel="canonical" href="https://elevadigital.site/">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eleva Digital | Autoridade em Performance">
+    <meta property="og:image" content="https://elevadigital.site/og-image.webp">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root { --indigo: #6366f1; --dark: #020617; }
+        body { font-family: 'Outfit', sans-serif; background-color: var(--dark); color: white; margin: 0; overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; }
+
+        .bg-cyber {
+            background-color: var(--dark);
+            background-image: radial-gradient(circle at 2px 2px, rgba(99, 102, 241, 0.04) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        .glow-main {
+            position: absolute; width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, rgba(0,0,0,0) 70%);
+            top: 5%; left: 50%; transform: translateX(-50%);
+            z-index: 0; pointer-events: none; filter: blur(60px);
+        }
+
+        .glass-premium {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fade-up { opacity: 0; transform: translateY(20px); }
+        .visible { opacity: 1; transform: translateY(0); transition: all 0.8s ease-out; }
+        
+        .marquee-track { overflow: hidden; white-space: nowrap; background: rgba(0,0,0,0.4); border-y: 1px solid rgba(255,255,255,0.05); }
+        .marquee-move { display: inline-block; animation: scroll 40s linear infinite; will-change: transform; }
+        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        .btn-main {
+            background: white; color: black; font-weight: 800; padding: 1.2rem 3rem; border-radius: 9999px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); transition: all 0.3s ease;
+            text-transform: uppercase; font-size: 11px; letter-spacing: 2px;
+        }
+        .btn-main:hover { transform: scale(1.03); box-shadow: 0 0 40px rgba(255, 255, 255, 0.4); }
+
+        select option { background: #0f172a; color: white; }
+    </style>
+</head>
+<body class="bg-cyber">
+
+    <div class="glow-main"></div>
+
+    <nav class="fixed w-full z-50 top-0 glass-premium !bg-transparent border-none">
+        <div class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
+            <a href="/" class="text-3xl font-black tracking-tighter">ELEVA<span class="text-indigo-500">.DIGITAL</span></a>
+            <div class="hidden md:flex space-x-12 text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">
+                <a href="#servicos" class="hover:text-white transition">Expertise</a>
+                <a href="#contato" class="hover:text-white transition">Contato</a>
+            </div>
+            <a href="https://wa.me/5513992074922" class="bg-indigo-600 px-8 py-3 rounded-full font-bold text-[10px] tracking-widest uppercase hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20">
+                Consultoria Especializada
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="min-h-screen flex flex-col items-center justify-center pt-24 relative px-6 text-center">
+            <div class="fade-up visible">
+                <div class="mb-10 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-indigo-950/30 border border-indigo-500/30 text-indigo-400 text-[10px] font-black uppercase tracking-[0.4em]">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    Triagem Comercial Ativa
+                </div>
+                
+                <h1 class="text-6xl md:text-9xl font-bold leading-[0.85] mb-10" fetchpriority="high">
+                    Criação de Sites <br>
+                    <span class="text-gradient" id="hero-city">em Todo o Brasil</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-slate-400 mb-14 max-w-3xl mx-auto leading-relaxed">
+                    A Eleva Digital projeta ecossistemas de alta conversão para empresas líderes <span id="city-text-alt" class="text-white font-black border-b-2 border-indigo-500">em qualquer localidade</span>.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-8">
+                    <a href="#contato" class="btn-main">Iniciar Diagnóstico de Negócio</a>
+                    <a href="https://wa.me/5513992074922" class="glass-premium px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white/5 transition uppercase text-[10px] tracking-widest">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Corporativo
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full mt-32 marquee-track py-10">
+                <div class="marquee-move flex gap-20 items-center text-slate-600 font-bold text-xs uppercase tracking-[0.4em]">
+                    <span>Santos</span> <span>São Vicente</span> <span>Guarujá</span> <span>Praia Grande</span> <span>Cubatão</span> <span>Mongaguá</span> <span>Itanhaém</span> <span>Peruíbe</span> <span>Bertioga</span> <span>Carapicuíba</span> <span>Next.js 15</span> <span>SEO Industrial</span> <span>ABC Paulista</span> <span>Manaus</span>
+                </div>
+            </div>
+        </header>
+
+        <section id="servicos" class="py-40 relative">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <div class="grid md:grid-cols-3 gap-10">
+                    <article class="glass-premium p-14 rounded-[3.5rem] text-left">
+                        <div class="w-16 h-16 bg-indigo-600/10 rounded-3xl flex items-center justify-center mb-10 border border-indigo-500/20">
+                            <i class="fas fa-microchip text-3xl text-indigo-500"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-6">Alta Engenharia</h2>
+                        <p class="text-slate-400 text-sm">Desenvolvimento focado em Core Web Vitals. Sites que carregam instantaneamente e dominam o PageSpeed.</p>
+                    </article>
+                    <article class="glass-premium p-14 rounded-[3.5rem] text-left border-indigo-500/30">
+                        <div class="w-16 h-16 bg-purple-600/10 rounded-3xl flex items-center justify-center mb-10 border border-purple-500/20">
+                            <i class="fas fa-bullseye text-3xl text-purple-500"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-6">SEO Geográfico</h2>
+                        <p class="text-slate-400 text-sm">Indexação dinâmica massiva para polos industriais e capitais brasileiras. Visibilidade onde o capital circula.</p>
+                    </article>
+                    <article class="glass-premium p-14 rounded-[3.5rem] text-left">
+                        <div class="w-16 h-16 bg-pink-600/10 rounded-3xl flex items-center justify-center mb-10 border border-pink-500/20">
+                            <i class="fas fa-chart-line text-3xl text-pink-500"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-6">Consultoria ROI</h2>
+                        <p class="text-slate-400 text-sm">Visão estratégica de Pedro Allan aplicada ao seu funil de vendas. Transformamos tecnologia em lucro líquido.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-40 px-6">
+            <div class="max-w-5xl mx-auto glass-premium p-10 md:p-24 rounded-[4rem]">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-7xl font-bold mb-8 italic tracking-tighter">Diagnóstico Comercial</h2>
+                    <p class="text-slate-400 text-xl max-w-2xl mx-auto">Preencha os dados abaixo para uma análise prioritária <span class="text-indigo-400 font-black" id="city-form">em sua região</span>.</p>
+                </div>
+                
+                <form id="elevaForm" onsubmit="handleTriagem(event)" class="space-y-8 max-w-3xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Nome da Empresa / Responsável</label>
+                            <input type="text" id="nome" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">WhatsApp de Contato</label>
+                            <input type="tel" id="whatsapp" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Porte / Faturamento Mensal</label>
+                            <select id="faturamento" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white appearance-none outline-none focus:border-indigo-500 transition">
+                                <option value="" disabled selected>Faixa de faturamento...</option>
+                                <option value="1">Até R$ 10.000 /mês (MEI)</option>
+                                <option value="2">R$ 20.000 a R$ 100.000 /mês (Média)</option>
+                                <option value="3">R$ 100.000 a R$ 360.000 /mês (Alta Performance)</option>
+                                <option value="5">Acima de R$ 500.000 /mês (Corporativo/Industrial)</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Principal Dor / Obstáculo</label>
+                            <select id="dor" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white appearance-none outline-none focus:border-indigo-500 transition">
+                                <option value="" disabled selected>O que impede seu crescimento?</option>
+                                <option value="3">Invisível no Google (Falta SEO)</option>
+                                <option value="4">Site lento/Péssima Performance</option>
+                                <option value="5">Baixa Conversão (Visitas não viram Leads)</option>
+                                <option value="2">Vou iniciar um novo projeto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Resumo do Objetivo Estratégico</label>
+                        <textarea id="mensagem" rows="4" placeholder="Ex: Preciso dominar o mercado de Carapicuíba e aumentar o faturamento em 30%..." class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-white text-black py-6 rounded-2xl font-black text-[11px] uppercase tracking-[0.4em] hover:bg-slate-200 transition-all shadow-2xl">
+                        Acionar Consultoria Especializada
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section id="regional" class="py-32 bg-black/40 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-20 text-[10px] text-slate-500 uppercase font-black tracking-[0.3em] leading-loose">
+                    <div>
+                        <h3 class="text-white mb-8 border-b border-indigo-500/30 pb-3">Baixada Santista</h3>
+                        <p>Santos</p><p>São Vicente</p><p>Guarujá</p><p>Praia Grande</p><p>Cubatão</p><p>Mongaguá</p><p>Itanhaém</p>
+                    </div>
+                    <div>
+                        <h3 class="text-white mb-8 border-b border-indigo-500/30 pb-3">Grande São Paulo</h3>
+                        <p>Carapicuíba</p><p>São Paulo (Capital)</p><p>Osasco</p><p>Barueri</p><p>ABC Paulista</p><p>Campinas</p>
+                    </div>
+                    <div>
+                        <h3 class="text-white mb-8 border-b border-indigo-500/30 pb-3">Polos Industriais</h3>
+                        <p>Manaus (AM)</p><p>Camaçari (BA)</p><p>Betim (MG)</p><p>Resende (RJ)</p><p>Joinville (SC)</p>
+                    </div>
+                    <div>
+                        <h3 class="text-white mb-8 border-b border-indigo-500/30 pb-3">Capitais</h3>
+                        <p>Rio de Janeiro</p><p>Curitiba</p><p>Brasília</p><p>Belo Horizonte</p><p>Porto Alegre</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-24 border-t border-white/5 bg-[#01030d]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
+            <div>
+                <span class="text-4xl font-black tracking-tighter">ELEVA<span class="text-indigo-500">.DIGITAL</span></span>
+                <p class="text-slate-600 text-[10px] mt-4 uppercase tracking-[0.5em] font-bold">CEO & Founder: Pedro Allan</p>
+                <p class="text-slate-800 text-[9px] mt-2 uppercase tracking-widest font-medium">CNPJ 34.176.462/0001-86 | Mongaguá - SP</p>
+            </div>
+            <div class="flex gap-10">
+                <a href="#" class="text-slate-500 hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="#" class="text-slate-500 hover:text-white transition"><i class="fab fa-linkedin text-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lgpd-banner" class="fixed bottom-0 left-0 w-full z-50 glass-premium !bg-slate-900/90 border-t border-indigo-500/30 p-6 transform translate-y-full transition-transform duration-700 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
+        <div class="text-sm text-slate-300 max-w-4xl text-center md:text-left">
+            <p><strong>Privacidade e Cookies:</strong> A Eleva Digital utiliza cookies para aprimorar sua experiência de navegação, otimizar nossa performance e personalizar conteúdo estratégico. Ao continuar em nosso site, você concorda com a nossa política de privacidade (LGPD).</p>
+        </div>
+        <div class="flex gap-4 shrink-0 w-full md:w-auto justify-center">
+            <button onclick="acceptLGPD()" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold text-[10px] tracking-widest uppercase hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20 w-full md:w-auto">
+                Aceitar e Continuar
+            </button>
+            <button onclick="declineLGPD()" class="bg-transparent border border-white/20 text-slate-300 px-6 py-3 rounded-full font-bold text-[10px] tracking-widest uppercase hover:bg-white/10 hover:text-white transition w-full md:w-auto">
+                Recusar
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function handleTriagem(event) {
+            event.preventDefault();
+            
+            const nome = document.getElementById('nome').value;
+            const zap = document.getElementById('whatsapp').value;
+            const fat = document.getElementById('faturamente'); // Corrigido via lógica abaixo
+            const fatVal = parseInt(document.getElementById('faturamente')?.value || 0);
+            const dorVal = parseInt(document.getElementById('dor').value);
+            const msg = document.getElementById('mensagem').value;
+            const cidadeContexto = document.getElementById('hero-city').textContent;
+
+            // CÁLCULO DE URGÊNCIA (Score de 0 a 10)
+            const score = (parseInt(document.getElementById('faturamente').value) + dorVal);
+            let urgencia = "PADRÃO";
+            let emoji = "🔵";
+
+            if(score >= 8) { urgencia = "CRÍTICA / HIGH-TICKET"; emoji = "🔴"; }
+            else if(score >= 5) { urgencia = "ALTA"; emoji = "🟡"; }
+
+            // MONTAGEM DA MENSAGEM PARA O TIME COMERCIAL
+            const textoFinal = `*NOVO LEAD QUALIFICADO - ELEVA DIGITAL*%0A%0A` +
+                `*Status:* ${urgencia} ${emoji}%0A` +
+                `*Cidade:* ${cidadeContexto}%0A%0A` +
+                `*Empresa:* ${nome}%0A` +
+                `*WhatsApp:* ${zap}%0A` +
+                `*Objetivo:* ${msg}%0A%0A` +
+                `_Lead triado via motor de performance Pedro Allan._`;
+
+            // Envio direto para o WhatsApp do comercial
+            window.open(`https://wa.me/5513992074922?text=${textoFinal}`, '_blank');
+        }
+
+        // SEO DINÂMICO
+        function injectSEO() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const city = urlParams.get('cidade') || urlParams.get('utm_term');
+
+            const applyTexts = (cityName) => {
+                const name = cityName.charAt(0).toUpperCase() + cityName.slice(1).replace(/-/g, ' ');
+                document.getElementById('hero-city').textContent = `em ${name}`;
+                document.getElementById('city-form').textContent = `em ${name}`;
+                document.getElementById('city-text-alt').textContent = `em ${name} e região`;
+                document.title = `Especialista em Sites em ${name} | Eleva Digital`;
+                document.getElementById('dynamic-title').innerText = `Sites em ${name} | Eleva Digital`;
+                document.getElementById('dynamic-desc').setAttribute("content", `Criação de sites profissionais em ${name}. Performance 100/100 e SEO regional liderado por Pedro Allan.`);
+            };
+
+            if (city) {
+                applyTexts(city);
+            } else {
+                fetch('https://ipapi.co/json/')
+                    .then(res => res.json())
+                    .then(data => { if (data.city) applyTexts(data.city); })
+                    .catch(() => {});
+            }
+        }
+
+        // LGPD LOGIC
+        function initLGPD() {
+            const lgpdBanner = document.getElementById('lgpd-banner');
+            if (!localStorage.getItem('lgpd_accepted')) {
+                // Adiciona um pequeno delay para a animação de subida ficar natural
+                setTimeout(() => {
+                    lgpdBanner.classList.remove('translate-y-full');
+                }, 1000);
+            }
+        }
+
+        function acceptLGPD() {
+            localStorage.setItem('lgpd_accepted', 'true');
+            document.getElementById('lgpd-banner').classList.add('translate-y-full');
+        }
+
+        function declineLGPD() {
+            localStorage.setItem('lgpd_accepted', 'false');
+            document.getElementById('lgpd-banner').classList.add('translate-y-full');
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            injectSEO();
+            initLGPD();
+        });
+    </script>
+</body>
+</html>

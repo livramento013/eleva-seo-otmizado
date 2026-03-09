@@ -6,8 +6,8 @@
     
     <title id="dynamic-title">Eleva Digital | Engenharia de Sites e SEO de Alta Performance</title>
     <meta name="description" id="dynamic-desc" content="A Eleva Digital cria infraestruturas digitais ultra-rápidas. Performance 100/100 PageSpeed sob gestão estratégica de Pedro Allan.">
-    <meta name="keywords" content="Pedro Allan Rodigues, Eleva Digital, criar site profissional, SEO industrial, Baixada Santista, Carapicuíba, Santos, Next.js, performance 100 PageSpeed">
-    <meta name="author" content="Pedro Allan Rodrigues - Founder">
+    <meta name="keywords" content="Pedro Allan, Eleva Digital, criar site profissional, SEO industrial, Baixada Santista, Carapicuíba, Santos, Next.js, performance 100 PageSpeed">
+    <meta name="author" content="Pedro Allan - Founder">
     <link rel="canonical" href="https://elevadigital.site/">
     <meta name="robots" content="index, follow">
 
@@ -20,7 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="./dist/output.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
@@ -77,7 +79,7 @@
 
     <nav class="fixed w-full z-50 top-0 glass-premium !bg-transparent border-none">
         <div class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
-            <a href="/" class="text-3xl font-black tracking-tighter">ELEVA<span class="text-indigo-500">.DIGITAL</span></a>
+            <a href="/" class="text-3xl font-black tracking-tighter" aria-label="Voltar para a página inicial">ELEVA<span class="text-indigo-500">.DIGITAL</span></a>
             <div class="hidden md:flex space-x-12 text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">
                 <a href="#servicos" class="hover:text-white transition">Expertise</a>
                 <a href="#contato" class="hover:text-white transition">Contato</a>
@@ -111,12 +113,12 @@
                 <div class="flex flex-col sm:flex-row justify-center gap-8">
                     <a href="#contato" class="btn-main">Iniciar Diagnóstico de Negócio</a>
                     <a href="https://wa.me/5513992074922" class="glass-premium px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white/5 transition uppercase text-[10px] tracking-widest">
-                        <i class="fab fa-whatsapp"></i> WhatsApp Corporativo
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Corporativo
                     </a>
                 </div>
             </div>
 
-            <div class="w-full mt-32 marquee-track py-10">
+            <div class="w-full mt-32 marquee-track py-10" aria-hidden="true">
                 <div class="marquee-move flex gap-20 items-center text-slate-600 font-bold text-xs uppercase tracking-[0.4em]">
                     <span>Santos</span> <span>São Vicente</span> <span>Guarujá</span> <span>Praia Grande</span> <span>Cubatão</span> <span>Mongaguá</span> <span>Itanhaém</span> <span>Peruíbe</span> <span>Bertioga</span> <span>Carapicuíba</span> <span>Next.js 15</span> <span>SEO Industrial</span> <span>ABC Paulista</span> <span>Manaus</span>
                 </div>
@@ -128,21 +130,21 @@
                 <div class="grid md:grid-cols-3 gap-10">
                     <article class="glass-premium p-14 rounded-[3.5rem] text-left">
                         <div class="w-16 h-16 bg-indigo-600/10 rounded-3xl flex items-center justify-center mb-10 border border-indigo-500/20">
-                            <i class="fas fa-microchip text-3xl text-indigo-500"></i>
+                            <i class="fas fa-microchip text-3xl text-indigo-500" aria-hidden="true"></i>
                         </div>
                         <h2 class="text-3xl font-bold mb-6">Alta Engenharia</h2>
                         <p class="text-slate-400 text-sm">Desenvolvimento focado em Core Web Vitals. Sites que carregam instantaneamente e dominam o PageSpeed.</p>
                     </article>
                     <article class="glass-premium p-14 rounded-[3.5rem] text-left border-indigo-500/30">
                         <div class="w-16 h-16 bg-purple-600/10 rounded-3xl flex items-center justify-center mb-10 border border-purple-500/20">
-                            <i class="fas fa-bullseye text-3xl text-purple-500"></i>
+                            <i class="fas fa-bullseye text-3xl text-purple-500" aria-hidden="true"></i>
                         </div>
                         <h2 class="text-3xl font-bold mb-6">SEO Geográfico</h2>
                         <p class="text-slate-400 text-sm">Indexação dinâmica massiva para polos industriais e capitais brasileiras. Visibilidade onde o capital circula.</p>
                     </article>
                     <article class="glass-premium p-14 rounded-[3.5rem] text-left">
                         <div class="w-16 h-16 bg-pink-600/10 rounded-3xl flex items-center justify-center mb-10 border border-pink-500/20">
-                            <i class="fas fa-chart-line text-3xl text-pink-500"></i>
+                            <i class="fas fa-chart-line text-3xl text-pink-500" aria-hidden="true"></i>
                         </div>
                         <h2 class="text-3xl font-bold mb-6">Consultoria ROI</h2>
                         <p class="text-slate-400 text-sm">Visão estratégica de Pedro Allan aplicada ao seu funil de vendas. Transformamos tecnologia em lucro líquido.</p>
@@ -160,29 +162,29 @@
                 
                 <form id="elevaForm" onsubmit="handleTriagem(event)" class="space-y-8 max-w-3xl mx-auto">
                     <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Nome da Empresa / Responsável</label>
+                        <div class="space-y-2 flex flex-col">
+                            <label for="nome" class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Nome da Empresa / Responsável</label>
                             <input type="text" id="nome" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition">
                         </div>
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">WhatsApp de Contato</label>
+                        <div class="space-y-2 flex flex-col">
+                            <label for="whatsapp" class="text-[10px] font-black uppercase tracking-widest text-indigo-400">WhatsApp de Contato</label>
                             <input type="tel" id="whatsapp" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition">
                         </div>
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Porte / Faturamento Mensal</label>
+                        <div class="space-y-2 flex flex-col">
+                            <label for="faturamento" class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Porte / Faturamento Mensal</label>
                             <select id="faturamento" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white appearance-none outline-none focus:border-indigo-500 transition">
                                 <option value="" disabled selected>Faixa de faturamento...</option>
-                                <option value="1">Até R$ 10.000 /mês (MEI)</option>
+                                <option value="1">Até R$ 20.000 /mês (Startup/MEI)</option>
                                 <option value="2">R$ 20.000 a R$ 100.000 /mês (Média)</option>
-                                <option value="3">R$ 100.000 a R$ 360.000 /mês (Alta Performance)</option>
+                                <option value="3">R$ 100.000 a R$ 500.000 /mês (Alta Performance)</option>
                                 <option value="5">Acima de R$ 500.000 /mês (Corporativo/Industrial)</option>
                             </select>
                         </div>
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Principal Dor / Obstáculo</label>
+                        <div class="space-y-2 flex flex-col">
+                            <label for="dor" class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Principal Dor / Obstáculo</label>
                             <select id="dor" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white appearance-none outline-none focus:border-indigo-500 transition">
                                 <option value="" disabled selected>O que impede seu crescimento?</option>
                                 <option value="3">Invisível no Google (Falta SEO)</option>
@@ -193,8 +195,8 @@
                         </div>
                     </div>
 
-                    <div class="space-y-2">
-                        <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Resumo do Objetivo Estratégico</label>
+                    <div class="space-y-2 flex flex-col">
+                        <label for="mensagem" class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Resumo do Objetivo Estratégico</label>
                         <textarea id="mensagem" rows="4" placeholder="Ex: Preciso dominar o mercado de Carapicuíba e aumentar o faturamento em 30%..." class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition"></textarea>
                     </div>
 
@@ -233,12 +235,16 @@
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
             <div>
                 <span class="text-4xl font-black tracking-tighter">ELEVA<span class="text-indigo-500">.DIGITAL</span></span>
-                <p class="text-slate-600 text-[10px] mt-4 uppercase tracking-[0.5em] font-bold">CEO & Founder: Pedro Allan</p>
-                <p class="text-slate-800 text-[9px] mt-2 uppercase tracking-widest font-medium">CNPJ 34.176.462/0001-86 | Mongaguá - SP</p>
+                <p class="text-slate-500 text-[10px] mt-4 uppercase tracking-[0.5em] font-bold">CEO & Founder: Pedro Allan</p>
+                <p class="text-slate-500 text-[9px] mt-2 uppercase tracking-widest font-medium">CNPJ 34.176.462/0001-86 | Mongaguá - SP</p>
             </div>
             <div class="flex gap-10">
-                <a href="#" class="text-slate-500 hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
-                <a href="#" class="text-slate-500 hover:text-white transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="#" aria-label="Acessar Instagram da Eleva Digital" class="text-slate-500 hover:text-white transition">
+                    <i class="fab fa-instagram text-2xl" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Acessar LinkedIn da Eleva Digital" class="text-slate-500 hover:text-white transition">
+                    <i class="fab fa-linkedin text-2xl" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </footer>
@@ -263,14 +269,13 @@
             
             const nome = document.getElementById('nome').value;
             const zap = document.getElementById('whatsapp').value;
-            const fat = document.getElementById('faturamente'); // Corrigido via lógica abaixo
-            const fatVal = parseInt(document.getElementById('faturamente')?.value || 0);
+            const fatVal = parseInt(document.getElementById('faturamento')?.value || 0);
             const dorVal = parseInt(document.getElementById('dor').value);
             const msg = document.getElementById('mensagem').value;
             const cidadeContexto = document.getElementById('hero-city').textContent;
 
             // CÁLCULO DE URGÊNCIA (Score de 0 a 10)
-            const score = (parseInt(document.getElementById('faturamente').value) + dorVal);
+            const score = (fatVal + dorVal);
             let urgencia = "PADRÃO";
             let emoji = "🔵";
 
@@ -319,7 +324,6 @@
         function initLGPD() {
             const lgpdBanner = document.getElementById('lgpd-banner');
             if (!localStorage.getItem('lgpd_accepted')) {
-                // Adiciona um pequeno delay para a animação de subida ficar natural
                 setTimeout(() => {
                     lgpdBanner.classList.remove('translate-y-full');
                 }, 1000);

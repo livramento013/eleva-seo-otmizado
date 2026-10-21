@@ -1,350 +1,1076 @@
+
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleva Digital | Agência de Tecnologia, Performance Web & Software</title>
+    <meta name="description" content="Engenharia de software de ponta, websites ultrarrápidos, PWAs, sistemas SaaS e automações de conversão com SEO 100/100 para empresas escalarem vendas.">
     
-    <title id="dynamic-title">Eleva Digital | Engenharia de Sites e SEO de Alta Performance</title>
-    <meta name="description" id="dynamic-desc" content="A Eleva Digital cria infraestruturas digitais ultra-rápidas. Performance 100/100 PageSpeed sob gestão estratégica de Pedro Allan.">
-    <meta name="keywords" content="Pedro Allan Rodigues, Eleva Digital, criar site profissional, SEO industrial, Baixada Santista, Carapicuíba, Santos, Next.js, performance 100 PageSpeed">
-    <meta name="author" content="Pedro Allan Rodrigues - Founder">
-    <link rel="canonical" href="https://elevadigital.site/">
-    <meta name="robots" content="index, follow">
+    <!-- Indexação e Rastreamento Global Google -->
+  <title>Eleva Digital | Criação de Sites, Landing Pages de Alta Conversão e Plataforma SaaS</title>
+  <meta name="description" content="Eleva Digital: Agência de tecnologia e plataforma especializada em criação de landing pages de alta conversão, sites ultrarrápidos, SEO local no Google e automações empresariais para lojistas, comércios e empresas em Mongaguá, Santos, Baixada Santista, São Paulo e todo o Brasil." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://elevadigital.site" />
+  <meta name="author" content="Eleva Digital" />
+  <meta name="publisher" content="Eleva Digital" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Eleva Digital | Autoridade em Performance">
-    <meta property="og:image" content="https://elevadigital.site/og-image.webp">
+  <!-- Palavras-Chave Completas -->
+  <meta name="keywords" content="eleva digital, elevadigital.site, criacao de sites, criar site, landing page, landing pages profissionais, criacao de landing pages, desenvolvedor de landing page, landing page alta conversao, criador de sites profissionais, desenvolvimento web, programador web, agencia de marketing digital, agencia de sites, empresa que faz site, fazer site para comercio, site para loja, site para restaurante, site para barbearia, site para salao de beleza, site para clinica, site para petshop, site para pizzaria, presenca digital para comercios, autoridade web lojas, seo local google, primeiro lugar no google, ranqueamento google meu negocio, colocar empresa no google, google maps para empresas, otimizacao de busca google, posicionar loja no topo do google, como criar site rapido, site leve e rapido, landing page celular, landing page mobile first, site responsivo, saas para pequenas empresas, plataforma de landing pages, subdominio para empresas, criador de sites automatico, criacao de sites em mongagua, criador de sites mongagua, landing page mongagua, programador em mongagua, criacao de sites praia grande, criacao de sites santos, criacao de sites sao vicente, criacao de sites itanhaem, criacao de sites peruibe, criacao de sites bertioga, criacao de sites cubatao, criacao de sites guaruja, criacao de sites baixada santista, criacao de sites sao paulo, criacao de sites sp, desenvolvedor web baixada santista, vender mais pelo whatsapp, botao whatsapp site, integracao whatsapp, catalogo online com whatsapp, desenvolvimento supabase, programador javascript, programador tailwind css, sites estaticos alta performance, agencia digital autoridade local, software house litoral paulista, criar landing page preco, contratar criador de sites" />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-    
+  <!-- Metadados de Geolocalização (SEO Local) -->
+  <meta name="geo.region" content="BR-SP" />
+  <meta name="geo.placename" content="Mongaguá, Baixada Santista, São Paulo, Brasil" />
+  <meta name="geo.position" content="-24.0931;-46.6208" />
+  <meta name="ICBM" content="-24.0931, -46.6208" />
+
+  <!-- Open Graph / Redes Sociais e WhatsApp Preview -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Eleva Digital | Landing Pages Premium e Autoridade Digital" />
+  <meta property="og:description" content="Coloque seu comércio ou negócio no topo do Google. Landing pages ultra-rápidas, SEO técnico e conversão direta para o WhatsApp." />
+  <meta property="og:url" content="https://elevadigital.site" />
+  <meta property="og:site_name" content="Eleva Digital" />
+  <meta property="og:image" content="https://elevadigital.site/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Eleva Digital - Landing Pages de Alta Performance" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Eleva Digital | Landing Pages Premium e Presença Web" />
+  <meta name="twitter:description" content="Estruturas modernas, velocidade extrema e autoridade digital no Google para comércios e empresas." />
+  <meta name="twitter:image" content="https://elevadigital.site/assets/og-image.jpg" />
+
+    <!-- Favicon SVG Vetorial Tech em Data URI -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2306b6d4'/%3E%3Cstop offset='50%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%2310b981'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%23030712'/%3E%3Cpath d='M16 4 L26 10 L16 16 L6 10 Z' fill='none' stroke='url(%23g)' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cpath d='M6 16 L16 22 L26 16' fill='none' stroke='url(%23g)' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cpath d='M6 22 L16 28 L26 22' fill='none' stroke='url(%23g)' stroke-width='2.2' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%2322d3ee'/%3E%3C/svg%3E">
+
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        cyber: {
+                            dark: '#030712',
+                            card: '#0b1120',
+                            border: 'rgba(56, 189, 248, 0.16)',
+                            cyan: '#06b6d4',
+                            purple: '#6366f1',
+                            emerald: '#10b981',
+                            neon: '#22d3ee',
+                        }
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 2.5s infinite',
+                        'float': 'float 5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 20px rgba(6, 182, 212, 0.35)' },
+                            '50%': { transform: 'scale(1.03)', boxShadow: '0 0 35px rgba(99, 102, 241, 0.6)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-8px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
     <style>
-        :root { --indigo: #6366f1; --dark: #020617; }
-        body { font-family: 'Outfit', sans-serif; background-color: var(--dark); color: white; margin: 0; overflow-x: hidden; }
-        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; }
-
-        .bg-cyber {
-            background-color: var(--dark);
-            background-image: radial-gradient(circle at 2px 2px, rgba(99, 102, 241, 0.04) 1px, transparent 0);
+        /* Cyberpunk Geometric Pure CSS Grid */
+        .cyber-grid {
             background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
         }
 
-        .glow-main {
-            position: absolute; width: 600px; height: 600px;
-            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, rgba(0,0,0,0) 70%);
-            top: 5%; left: 50%; transform: translateX(-50%);
-            z-index: 0; pointer-events: none; filter: blur(60px);
+        /* Glassmorphism Styles */
+        .glass-card {
+            background: rgba(11, 17, 32, 0.78);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(56, 189, 248, 0.14);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
         }
 
-        .glass-premium {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.45);
+            box-shadow: 0 15px 35px -10px rgba(6, 182, 212, 0.22);
         }
 
+        .glass-card-purple {
+            background: rgba(13, 14, 33, 0.82);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(99, 102, 241, 0.25);
+        }
+
+        /* Gradient Glows */
         .text-gradient {
-            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #34d399 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .fade-up { opacity: 0; transform: translateY(20px); }
-        .visible { opacity: 1; transform: translateY(0); transition: all 0.8s ease-out; }
-        
-        .marquee-track { overflow: hidden; white-space: nowrap; background: rgba(0,0,0,0.4); border-y: 1px solid rgba(255,255,255,0.05); }
-        .marquee-move { display: inline-block; animation: scroll 40s linear infinite; will-change: transform; }
-        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
-        .btn-main {
-            background: white; color: black; font-weight: 800; padding: 1.2rem 3rem; border-radius: 9999px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); transition: all 0.3s ease;
-            text-transform: uppercase; font-size: 11px; letter-spacing: 2px;
+        .text-cyan-glow {
+            background: linear-gradient(135deg, #67e8f9 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        .btn-main:hover { transform: scale(1.03); box-shadow: 0 0 40px rgba(255, 255, 255, 0.4); }
 
-        select option { background: #0f172a; color: white; }
+        /* Radial Lights */
+        .ambient-cyan {
+            background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.14) 0%, transparent 60%);
+        }
+        .ambient-purple {
+            background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.14) 0%, transparent 60%);
+        }
+
+        /* Accordion transition */
+        .faq-answer {
+            transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-out;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+        .faq-answer.open {
+            max-height: 420px;
+            opacity: 1;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-icon.rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Modal Backdrop */
+        .modal-overlay {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
     </style>
 </head>
-<body class="bg-cyber">
+<body class="bg-[#030712] text-slate-100 font-sans cyber-grid selection:bg-cyan-500 selection:text-black overflow-x-hidden relative">
 
-    <div class="glow-main"></div>
+    <!-- Ambient Lights de Fundo -->
+    <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] ambient-cyan pointer-events-none z-0"></div>
+    <div class="fixed top-[45%] right-[-10%] w-[55vw] h-[55vw] ambient-purple pointer-events-none z-0"></div>
 
-    <nav class="fixed w-full z-50 top-0 glass-premium !bg-transparent border-none">
-        <div class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
-            <a href="/" class="text-3xl font-black tracking-tighter">ELEVA<span class="text-indigo-500">.DIGITAL</span></a>
-            <div class="hidden md:flex space-x-12 text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">
-                <a href="#servicos" class="hover:text-white transition">Expertise</a>
-                <a href="#contato" class="hover:text-white transition">Contato</a>
-            </div>
-            <a href="https://wa.me/5513992074922" class="bg-indigo-600 px-8 py-3 rounded-full font-bold text-[10px] tracking-widest uppercase hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20">
-                Consultoria Especializada
-            </a>
-        </div>
-    </nav>
-
-    <main>
-        <header class="min-h-screen flex flex-col items-center justify-center pt-24 relative px-6 text-center">
-            <div class="fade-up visible">
-                <div class="mb-10 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-indigo-950/30 border border-indigo-500/30 text-indigo-400 text-[10px] font-black uppercase tracking-[0.4em]">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                    </span>
-                    Triagem Comercial Ativa
+    <!-- 1. NAVBAR FIXA COM GLASSMORPHISM -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#030712]/85 backdrop-blur-md border-b border-white/5" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-emerald-400 p-[1.5px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-[#070b19] rounded-[10px] flex items-center justify-center">
+                        <svg class="w-5 h-5 text-cyan-400 group-hover:text-emerald-400 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
                 </div>
-                
-                <h1 class="text-6xl md:text-9xl font-bold leading-[0.85] mb-10" fetchpriority="high">
-                    Criação de Sites <br>
-                    <span class="text-gradient" id="hero-city">em Todo o Brasil</span>
-                </h1>
-                
-                <p class="text-xl md:text-2xl text-slate-400 mb-14 max-w-3xl mx-auto leading-relaxed">
-                    A Eleva Digital projeta ecossistemas de alta conversão para empresas líderes <span id="city-text-alt" class="text-white font-black border-b-2 border-indigo-500">em qualquer localidade</span>.
+                <div>
+                    <span class="font-display font-extrabold text-xl tracking-tight text-white flex items-center">
+                        ELEVA<span class="text-cyan-400 ml-1">DIGITAL</span>
+                    </span>
+                    <span class="text-[9px] block uppercase tracking-[0.25em] text-cyan-400/80 font-bold -mt-1">High Tech Studio</span>
+                </div>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <a href="#solucoes" class="hover:text-cyan-400 transition-colors">Soluções</a>
+                <a href="#diferenciais" class="hover:text-cyan-400 transition-colors">Diferenciais</a>
+                <a href="#metodologia" class="hover:text-cyan-400 transition-colors">Metodologia</a>
+                <a href="#comercial" class="hover:text-cyan-400 transition-colors">Condições Comerciais</a>
+                <a href="#faq" class="hover:text-cyan-400 transition-colors">FAQ</a>
+                <a href="#abrangencia" class="hover:text-cyan-400 transition-colors">Cidades</a>
+            </nav>
+
+            <!-- CTA Header -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Gostaria%20de%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20gratuito%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="relative group px-5 py-2.5 rounded-xl font-semibold text-xs uppercase tracking-wider text-black bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-400 hover:opacity-95 transition-all shadow-[0_0_20px_rgba(6,182,212,0.35)] hover:shadow-[0_0_30px_rgba(6,182,212,0.6)]">
+                    <span class="flex items-center gap-2">
+                        <svg class="w-4 h-4 fill-black" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Solicitar Diagnóstico
+                    </span>
+                </a>
+            </div>
+
+            <!-- Botão Mobile Menu -->
+            <button id="mobileMenuBtn" aria-label="Abrir Menu" class="md:hidden text-slate-300 hover:text-white p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer" class="hidden md:hidden bg-[#070c18] border-b border-white/10 px-6 py-6 space-y-4">
+            <a href="#solucoes" class="block text-slate-300 hover:text-cyan-400 text-base py-1">Soluções</a>
+            <a href="#diferenciais" class="block text-slate-300 hover:text-cyan-400 text-base py-1">Diferenciais</a>
+            <a href="#metodologia" class="block text-slate-300 hover:text-cyan-400 text-base py-1">Metodologia</a>
+            <a href="#comercial" class="block text-slate-300 hover:text-cyan-400 text-base py-1">Condições Comerciais</a>
+            <a href="#faq" class="block text-slate-300 hover:text-cyan-400 text-base py-1">FAQ</a>
+            <a href="#abrangencia" class="block text-slate-300 hover:text-cyan-400 text-base py-1">Cidades</a>
+            <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Gostaria%20de%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20gratuito%20para%20minha%20empresa." class="block text-center mt-3 py-3 rounded-lg bg-cyan-400 text-black font-bold">Falar com Especialista</a>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            
+            <!-- Tech Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-cyan-500/30 mb-8 animate-float">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                <span class="text-xs uppercase tracking-widest font-semibold text-cyan-300">Software House & Engenharia Digital B2B</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display tracking-tight text-white max-w-5xl mx-auto leading-[1.12]">
+                Transformamos sua presença digital em uma <span class="text-gradient">máquina de vendas previsível</span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="mt-8 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+                Desenvolvemos <strong>Websites Institucionais de Alta Performance</strong>, PWAs ultrarrápidas, <strong>Plataformas SaaS</strong>, E-commerces B2B e <strong>Automações de Processos</strong>. Engenharia moderna de software com SEO 100/100 para colocar sua empresa na liderança do mercado.
+            </p>
+
+            <!-- Metrics bar under Hero -->
+            <div class="mt-8 flex flex-wrap justify-center items-center gap-6 sm:gap-12 text-sm text-slate-400">
+                <div class="flex items-center gap-2">
+                    <span class="text-cyan-400 font-bold text-lg">⚡ < 0.8s</span>
+                    <span>Carregamento Médio</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-indigo-400 font-bold text-lg">🎯 100/100</span>
+                    <span>Google Core Web Vitals</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-emerald-400 font-bold text-lg">📈 +300%</span>
+                    <span>Conversão Média de Leads</span>
+                </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Quero%20agendar%20um%20diagn%C3%B3stico%20gratuito%20com%20a%20Eleva%20Digital." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base text-black bg-gradient-to-r from-cyan-400 to-teal-300 hover:from-cyan-300 hover:to-white transition-all shadow-[0_0_25px_rgba(6,182,212,0.45)] flex items-center justify-center gap-3">
+                    <span>Iniciar Projeto no WhatsApp</span>
+                    <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="#solucoes" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-base text-slate-200 glass-card hover:bg-slate-800/80 transition-all border border-slate-700/60 flex items-center justify-center gap-2">
+                    <span>Explorar Nossas Soluções</span>
+                    <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+            </div>
+
+            <!-- Dashboard Preview Cyber Mockup -->
+            <div class="mt-16 relative max-w-4xl mx-auto rounded-2xl p-[1px] bg-gradient-to-b from-cyan-500/40 via-indigo-500/20 to-transparent">
+                <div class="rounded-2xl bg-[#090e1d]/90 backdrop-blur-xl p-4 sm:p-6 shadow-2xl border border-white/10">
+                    <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6 text-xs text-slate-400">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                            <span class="ml-2 font-mono text-cyan-400">elevadigital.app/performance-engine</span>
+                        </div>
+                        <span class="font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">System Online • 99.98% SLA</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5">
+                            <span class="text-xs text-slate-400 uppercase tracking-wider block">Índice PageSpeed</span>
+                            <span class="text-3xl font-extrabold text-cyan-400 font-display mt-1 block">99 / 100</span>
+                            <span class="text-[11px] text-slate-400 mt-2 block">Zero código obsoleto. Next.js & Server Components.</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5">
+                            <span class="text-xs text-slate-400 uppercase tracking-wider block">Leads Qualificados</span>
+                            <span class="text-3xl font-extrabold text-indigo-400 font-display mt-1 block">+184% MoM</span>
+                            <span class="text-[11px] text-slate-400 mt-2 block">Funnels otimizados com UX direcionado à conversão.</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5">
+                            <span class="text-xs text-slate-400 uppercase tracking-wider block">Automação de Pipeline</span>
+                            <span class="text-3xl font-extrabold text-emerald-400 font-display mt-1 block">100% Sync</span>
+                            <span class="text-[11px] text-slate-400 mt-2 block">Integração nativa com CRMs, WhatsApp e ERPs.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. SEÇÃO DE SOLUÇÕES / SERVIÇOS -->
+    <section id="solucoes" class="py-24 relative z-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs uppercase tracking-widest font-bold">Arquitetura Completa</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-white mt-2">
+                    Soluções de Engenharia Digital para <span class="text-cyan-glow">Escalar Negócios</span>
+                </h2>
+                <p class="text-slate-400 mt-4 text-base sm:text-lg">
+                    Não desenvolvemos apenas websites. Criamos ecossistemas digitais de alta tração que operam no piloto comercial da sua marca.
                 </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card 1 -->
+                <div class="glass-card rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 group relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">Next.js / React</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">Tailwind</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">SEO 100/100</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Websites Institucionais High-End</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Páginas corporativas que impõem autoridade imediata. Velocidade supersônica, indexação orgânica agressiva no Google e copywriting calibrado para fechar contratos B2B.
+                    </p>
+                    <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Gostaria%20de%20um%20projeto%20de%20Website%20Institucional%20High-End." target="_blank" rel="noopener noreferrer" class="text-cyan-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Falar com Especialista <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 group relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-300 border border-indigo-800">PWA</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-300 border border-indigo-800">Mobile-First</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-300 border border-indigo-800">Offline Ready</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">PWAs & Aplicações Web</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Experiência fluida de aplicativo móvel direto pelo navegador sem a barreira de download nas lojas de apps. Instalação instantânea, notificações push e alta retenção.
+                    </p>
+                    <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Gostaria%20de%20mais%20detalhes%20sobre%20PWAs%20e%20Web%20Apps." target="_blank" rel="noopener noreferrer" class="text-indigo-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Falar com Especialista <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 group relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-6 group-hover:bg-blue-500/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-950 text-blue-300 border border-blue-800">Plataformas SaaS</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-950 text-blue-300 border border-blue-800">APIs REST</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-950 text-blue-300 border border-blue-800">Bancos SQL/NoSQL</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Plataformas SaaS & Portais</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Desenvolvimento sob demanda de softwares como serviço (SaaS), dashboards corporativos com gestão de permissões (RBAC) e área restrita para clientes e parceiros.
+                    </p>
+                    <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Preciso%20de%20uma%20Plataforma%20SaaS%20ou%20Portal%20Corporativo." target="_blank" rel="noopener noreferrer" class="text-blue-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Falar com Especialista <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 group relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-6 group-hover:bg-emerald-500/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">Checkout Transparente</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">B2B & D2C</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">PIX & ERP</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">E-commerce de Alta Conversão</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Lojas virtuais com carregamento instantâneo, checkout em 1 clique e cálculo de frete dinâmico. Arquitetura robusta para suportar picos de tráfego sem queda.
+                    </p>
+                    <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Gostaria%20de%20um%20E-commerce%20otimizado%20para%20convers%C3%A3o." target="_blank" rel="noopener noreferrer" class="text-emerald-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Falar com Especialista <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 group relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6 group-hover:bg-amber-500/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800">Webhooks</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800">CRMs</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800">WhatsApp Bot</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Automações & Integrações</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Elimine gargalos operacionais conectando formulários de captação aos seus canais comerciais (WhatsApp, Hubspot, RD Station, ActiveCampaign e planilhas).
+                    </p>
+                    <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Quero%20automatizar%20o%20fluxo%20de%20leads%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="text-amber-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Falar com Especialista <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 group relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 mb-6 group-hover:bg-teal-500/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-teal-950 text-teal-300 border border-teal-800">Schema.org</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-teal-950 text-teal-300 border border-teal-800">SEO Local</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-teal-950 text-teal-300 border border-teal-800">Top #1 Google</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">SEO Técnico & Estratégico</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Otimização profunda de metadados, arquitetura semântica HTML5, sitemaps dinâmicos e autoridade para capturar clientes prontos para compra direto das buscas.
+                    </p>
+                    <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Quero%20dominar%20as%20primeiras%20posi%C3%A7%C3%B5es%20no%20Google%20com%20SEO." target="_blank" rel="noopener noreferrer" class="text-teal-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Falar com Especialista <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SEÇÃO COMPARATIVA: 'POR QUE A ELEVA DIGITAL' -->
+    <section id="diferenciais" class="py-24 relative z-10 bg-[#02050e]/60 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-400 text-xs uppercase tracking-widest font-bold">Benchmark Real</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-white mt-2">
+                    Por que empresas que faturam alto <span class="text-gradient">escolhem a Eleva Digital</span>?
+                </h2>
+                <p class="text-slate-400 mt-4 text-base">
+                    Sites lentos custam fortunas em clientes perdidos a cada segundo. Compare a diferença prática entre o mercado genérico e a nossa engenharia:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <!-- Coluna: Sites Convencionais / Amadores -->
+                <div class="p-8 rounded-3xl bg-red-950/20 border border-red-500/20 relative">
+                    <div class="flex items-center justify-between pb-6 border-b border-red-500/20 mb-6">
+                        <div>
+                            <span class="text-xs uppercase font-mono tracking-wider text-red-400">Padrão Ultrapassado</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Sites Lentos e Genéricos</h3>
+                        </div>
+                        <span class="p-2.5 rounded-xl bg-red-500/10 text-red-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </span>
+                    </div>
+
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✕</span>
+                            <span><strong>Lentidão Extrema:</strong> Carregamentos de 4 a 8 segundos cheios de plugins pesados e código redundante.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✕</span>
+                            <span><strong>Layouts Padronizados:</strong> Modelos copiados de templates genéricos que não geram autoridade corporativa.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✕</span>
+                            <span><strong>Zero Foco em Vendas:</strong> Páginas sem funil persuasivo, desperdiçando o tráfego pago da sua empresa.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✕</span>
+                            <span><strong>Invisibilidade no Google:</strong> Sem estrutura semântica ou SEO técnico, ficando atrás dos seus concorrentes diretos.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✕</span>
+                            <span><strong>Vulnerabilidades de Segurança:</strong> Falhas recorrentes e risco iminente de quedas em servidores precários.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna: Engenharia Eleva Digital -->
+                <div class="p-8 rounded-3xl glass-card border-cyan-500/40 relative shadow-[0_0_40px_rgba(6,182,212,0.15)]">
+                    <div class="absolute -top-3 right-6 bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400 px-4 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-widest text-black">
+                        Alta Performance
+                    </div>
+
+                    <div class="flex items-center justify-between pb-6 border-b border-cyan-500/20 mb-6">
+                        <div>
+                            <span class="text-xs uppercase font-mono tracking-wider text-cyan-400">Padrão Eleva Digital</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Plataformas Otimizadas para Lucro</h3>
+                        </div>
+                        <span class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </span>
+                    </div>
+
+                    <ul class="space-y-4 text-sm text-slate-200">
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 font-bold">✓</span>
+                            <span><strong>Carregamento em Milissegundos:</strong> Código limpo, Next.js e CDN global garantindo abertura instantânea em qualquer conexão.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 font-bold">✓</span>
+                            <span><strong>Design Exclusivo Cyber-Tech:</strong> Identidade visual imponente que posiciona sua marca como líder do segmento.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 font-bold">✓</span>
+                            <span><strong>Engenharia de Conversão (CRO):</strong> Pontos de contato estratégicos para multiplicar seus leads comerciais.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 font-bold">✓</span>
+                            <span><strong>SEO Técnico Avançado 100/100:</strong> Indexação prioritária nos motores de busca para atrair clientes orgânicos qualificados.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 font-bold">✓</span>
+                            <span><strong>Blindagem & Escalabilidade:</strong> Servidores modernos em edge computing com criptografia TLS/SSL de ponta.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SEÇÃO DE METODOLOGIA E PROCESSO -->
+    <section id="metodologia" class="py-24 relative z-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-cyan-400 text-xs uppercase tracking-widest font-bold">Workflow Ágil & Transparente</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-white mt-2">
+                    Metodologia em <span class="text-gradient">4 Etapas Estratégicas</span>
+                </h2>
+                <p class="text-slate-400 mt-4 text-base">
+                    Da concepção estratégica à entrega final sem retrabalho, garantindo pontualidade rigorosa e impacto mensurável.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
                 
-                <div class="flex flex-col sm:flex-row justify-center gap-8">
-                    <a href="#contato" class="btn-main">Iniciar Diagnóstico de Negócio</a>
-                    <a href="https://wa.me/5513992074922" class="glass-premium px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white/5 transition uppercase text-[10px] tracking-widest">
-                        <i class="fab fa-whatsapp"></i> WhatsApp Corporativo
+                <!-- Etapa 01 -->
+                <div class="glass-card rounded-2xl p-6 relative">
+                    <span class="font-mono text-4xl font-extrabold text-cyan-400/20 absolute top-4 right-4">01</span>
+                    <div class="w-10 h-10 rounded-lg bg-cyan-400/10 text-cyan-400 flex items-center justify-center font-bold text-sm mb-4">
+                        PASSO 1
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Diagnóstico Estratégico</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Mapeamos seu modelo de receita, diferenciais de mercado, concorrentes e o comportamento do seu decisor de compra.
+                    </p>
+                </div>
+
+                <!-- Etapa 02 -->
+                <div class="glass-card rounded-2xl p-6 relative">
+                    <span class="font-mono text-4xl font-extrabold text-indigo-400/20 absolute top-4 right-4">02</span>
+                    <div class="w-10 h-10 rounded-lg bg-indigo-400/10 text-indigo-400 flex items-center justify-center font-bold text-sm mb-4">
+                        PASSO 2
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Arquitetura & UX/UI</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Desenhamos protótipos de alta fidelidade pensados para guiar o olhar do cliente rumo ao fechamento da proposta comercial.
+                    </p>
+                </div>
+
+                <!-- Etapa 03 -->
+                <div class="glass-card rounded-2xl p-6 relative">
+                    <span class="font-mono text-4xl font-extrabold text-blue-400/20 absolute top-4 right-4">03</span>
+                    <div class="w-10 h-10 rounded-lg bg-blue-400/10 text-blue-400 flex items-center justify-center font-bold text-sm mb-4">
+                        PASSO 3
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Engenharia de Código Limpo</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Codificação pura e moderna sem códigos desnecessários. Performance impecável para alcançar nota máxima no Google Core Web Vitals.
+                    </p>
+                </div>
+
+                <!-- Etapa 04 -->
+                <div class="glass-card rounded-2xl p-6 relative">
+                    <span class="font-mono text-4xl font-extrabold text-emerald-400/20 absolute top-4 right-4">04</span>
+                    <div class="w-10 h-10 rounded-lg bg-emerald-400/10 text-emerald-400 flex items-center justify-center font-bold text-sm mb-4">
+                        PASSO 4
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">SEO & Lançamento Comercial</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Testes de estresse, configuração de tracking e analytics, indexação no Google Search Console e entrega de plataforma 100% pronta.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SEÇÃO DE CONDIÇÕES COMERCIAIS TRANSPARENTES -->
+    <section id="comercial" class="py-24 relative z-10 bg-[#060b18]/70 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto glass-card-purple rounded-3xl p-8 sm:p-12 border border-indigo-500/30 text-center relative overflow-hidden">
+                <div class="absolute -right-20 -bottom-20 w-64 h-64 ambient-purple pointer-events-none"></div>
+
+                <span class="text-xs font-mono uppercase tracking-widest text-indigo-400 font-bold bg-indigo-950/60 px-3 py-1 rounded-full border border-indigo-700/50">
+                    Facilidade B2B Exclusiva
+                </span>
+
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white mt-4 leading-tight">
+                    Condições Comerciais Sem Burocracia
+                </h2>
+
+                <p class="mt-4 text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
+                    Sabemos que sua empresa precisa de fluxo de caixa livre para crescer. Por isso, oferecemos modalidades financeiras pensadas para a realidade do empresário.
+                </p>
+
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
+                    <div class="p-5 rounded-2xl bg-[#090f24] border border-white/10">
+                        <div class="w-8 h-8 rounded-lg bg-cyan-400/10 text-cyan-400 flex items-center justify-center mb-3 font-bold">1</div>
+                        <h4 class="font-bold text-white text-base">Entrada Facilitada</h4>
+                        <p class="text-xs text-slate-400 mt-2">Dê o start no seu projeto com sinal reduzido alinhado ao cronograma de marcos.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#090f24] border border-white/10">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-400/10 text-indigo-400 flex items-center justify-center mb-3 font-bold">2</div>
+                        <h4 class="font-bold text-white text-base">Boleto Bancário Faturado</h4>
+                        <p class="text-xs text-slate-400 mt-2">Parcelamento direto para CNPJ sem comprometer os limites do cartão corporativo.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#090f24] border border-white/10">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-400/10 text-emerald-400 flex items-center justify-center mb-3 font-bold">3</div>
+                        <h4 class="font-bold text-white text-base">Contrato com SLA & NF</h4>
+                        <p class="text-xs text-slate-400 mt-2">Segurança jurídica completa, emissão de nota fiscal e garantia de suporte pós-lançamento.</p>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Gostaria%20de%20receber%20uma%20proposta%20com%20parcelamento%20no%20boleto%20PJ." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wider text-black bg-gradient-to-r from-indigo-300 via-cyan-300 to-emerald-300 hover:opacity-95 transition-all shadow-[0_0_30px_rgba(99,102,241,0.4)]">
+                        Consultar Condições Comerciais
+                        <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="w-full mt-32 marquee-track py-10">
-                <div class="marquee-move flex gap-20 items-center text-slate-600 font-bold text-xs uppercase tracking-[0.4em]">
-                    <span>Santos</span> <span>São Vicente</span> <span>Guarujá</span> <span>Praia Grande</span> <span>Cubatão</span> <span>Mongaguá</span> <span>Itanhaém</span> <span>Peruíbe</span> <span>Bertioga</span> <span>Carapicuíba</span> <span>Next.js 15</span> <span>SEO Industrial</span> <span>ABC Paulista</span> <span>Manaus</span>
-                </div>
+    <!-- 7. SEÇÃO DE PERGUNTAS FREQUENTES (FAQ) -->
+    <section id="faq" class="py-24 relative z-10 border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-cyan-400 text-xs uppercase tracking-widest font-bold">Tire Suas Dúvidas</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-white mt-2">
+                    Perguntas Frequentes
+                </h2>
+                <p class="text-slate-400 mt-3 text-base">
+                    Tudo o que você precisa saber antes de iniciar seu projeto com a Eleva Digital.
+                </p>
             </div>
-        </header>
 
-        <section id="servicos" class="py-40 relative">
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <div class="grid md:grid-cols-3 gap-10">
-                    <article class="glass-premium p-14 rounded-[3.5rem] text-left">
-                        <div class="w-16 h-16 bg-indigo-600/10 rounded-3xl flex items-center justify-center mb-10 border border-indigo-500/20">
-                            <i class="fas fa-microchip text-3xl text-indigo-500"></i>
-                        </div>
-                        <h2 class="text-3xl font-bold mb-6">Alta Engenharia</h2>
-                        <p class="text-slate-400 text-sm">Desenvolvimento focado em Core Web Vitals. Sites que carregam instantaneamente e dominam o PageSpeed.</p>
-                    </article>
-                    <article class="glass-premium p-14 rounded-[3.5rem] text-left border-indigo-500/30">
-                        <div class="w-16 h-16 bg-purple-600/10 rounded-3xl flex items-center justify-center mb-10 border border-purple-500/20">
-                            <i class="fas fa-bullseye text-3xl text-purple-500"></i>
-                        </div>
-                        <h2 class="text-3xl font-bold mb-6">SEO Geográfico</h2>
-                        <p class="text-slate-400 text-sm">Indexação dinâmica massiva para polos industriais e capitais brasileiras. Visibilidade onde o capital circula.</p>
-                    </article>
-                    <article class="glass-premium p-14 rounded-[3.5rem] text-left">
-                        <div class="w-16 h-16 bg-pink-600/10 rounded-3xl flex items-center justify-center mb-10 border border-pink-500/20">
-                            <i class="fas fa-chart-line text-3xl text-pink-500"></i>
-                        </div>
-                        <h2 class="text-3xl font-bold mb-6">Consultoria ROI</h2>
-                        <p class="text-slate-400 text-sm">Visão estratégica de Pedro Allan aplicada ao seu funil de vendas. Transformamos tecnologia em lucro líquido.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="contato" class="py-40 px-6">
-            <div class="max-w-5xl mx-auto glass-premium p-10 md:p-24 rounded-[4rem]">
-                <div class="text-center mb-20">
-                    <h2 class="text-4xl md:text-7xl font-bold mb-8 italic tracking-tighter">Diagnóstico Comercial</h2>
-                    <p class="text-slate-400 text-xl max-w-2xl mx-auto">Preencha os dados abaixo para uma análise prioritária <span class="text-indigo-400 font-black" id="city-form">em sua região</span>.</p>
-                </div>
+            <div class="space-y-4" id="faqAccordion">
                 
-                <form id="elevaForm" onsubmit="handleTriagem(event)" class="space-y-8 max-w-3xl mx-auto">
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Nome da Empresa / Responsável</label>
-                            <input type="text" id="nome" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition">
-                        </div>
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">WhatsApp de Contato</label>
-                            <input type="tel" id="whatsapp" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition">
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Porte / Faturamento Mensal</label>
-                            <select id="faturamento" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white appearance-none outline-none focus:border-indigo-500 transition">
-                                <option value="" disabled selected>Faixa de faturamento...</option>
-                                <option value="1">Até R$ 10.000 /mês (MEI)</option>
-                                <option value="2">R$ 20.000 a R$ 100.000 /mês (Média)</option>
-                                <option value="3">R$ 100.000 a R$ 360.000 /mês (Alta Performance)</option>
-                                <option value="5">Acima de R$ 500.000 /mês (Corporativo/Industrial)</option>
-                            </select>
-                        </div>
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Principal Dor / Obstáculo</label>
-                            <select id="dor" required class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white appearance-none outline-none focus:border-indigo-500 transition">
-                                <option value="" disabled selected>O que impede seu crescimento?</option>
-                                <option value="3">Invisível no Google (Falta SEO)</option>
-                                <option value="4">Site lento/Péssima Performance</option>
-                                <option value="5">Baixa Conversão (Visitas não viram Leads)</option>
-                                <option value="2">Vou iniciar um novo projeto</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="space-y-2">
-                        <label class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Resumo do Objetivo Estratégico</label>
-                        <textarea id="mensagem" rows="4" placeholder="Ex: Preciso dominar o mercado de Carapicuíba e aumentar o faturamento em 30%..." class="w-full bg-slate-900/40 border border-white/5 p-5 rounded-2xl text-white outline-none focus:border-indigo-500 transition"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full bg-white text-black py-6 rounded-2xl font-black text-[11px] uppercase tracking-[0.4em] hover:bg-slate-200 transition-all shadow-2xl">
-                        Acionar Consultoria Especializada
+                <!-- FAQ Item 1 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none faq-btn">
+                        <span class="font-bold text-white text-base">Quanto tempo leva para desenvolver meu website ou aplicação?</span>
+                        <svg class="w-5 h-5 text-cyan-400 faq-icon shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                </form>
-            </div>
-        </section>
-
-        <section id="regional" class="py-32 bg-black/40 border-t border-white/5">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-20 text-[10px] text-slate-500 uppercase font-black tracking-[0.3em] leading-loose">
-                    <div>
-                        <h3 class="text-white mb-8 border-b border-indigo-500/30 pb-3">Baixada Santista</h3>
-                        <p>Santos</p><p>São Vicente</p><p>Guarujá</p><p>Praia Grande</p><p>Cubatão</p><p>Mongaguá</p><p>Itanhaém</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white mb-8 border-b border-indigo-500/30 pb-3">Grande São Paulo</h3>
-                        <p>Carapicuíba</p><p>São Paulo (Capital)</p><p>Osasco</p><p>Barueri</p><p>ABC Paulista</p><p>Campinas</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white mb-8 border-b border-indigo-500/30 pb-3">Polos Industriais</h3>
-                        <p>Manaus (AM)</p><p>Camaçari (BA)</p><p>Betim (MG)</p><p>Resende (RJ)</p><p>Joinville (SC)</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white mb-8 border-b border-indigo-500/30 pb-3">Capitais</h3>
-                        <p>Rio de Janeiro</p><p>Curitiba</p><p>Brasília</p><p>Belo Horizonte</p><p>Porto Alegre</p>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-300 text-sm leading-relaxed pb-6">
+                            Para Landing Pages e Websites Institucionais estratégicos, nosso ciclo ágil de entrega varia entre <strong>7 a 15 dias úteis</strong>. Para aplicações personalizadas, PWAs e plataformas SaaS complexas, o cronograma é estipulado por fases (sprints) de acordo com o escopo do projeto, garantindo entregas parciais funcionais.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="py-24 border-t border-white/5 bg-[#01030d]">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
-            <div>
-                <span class="text-4xl font-black tracking-tighter">ELEVA<span class="text-indigo-500">.DIGITAL</span></span>
-                <p class="text-slate-600 text-[10px] mt-4 uppercase tracking-[0.5em] font-bold">CEO & Founder: Pedro Allan</p>
-                <p class="text-slate-800 text-[9px] mt-2 uppercase tracking-widest font-medium">CNPJ 34.176.462/0001-86 | Mongaguá - SP</p>
+                <!-- FAQ Item 2 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none faq-btn">
+                        <span class="font-bold text-white text-base">Como funciona o parcelamento faturado no boleto para empresas?</span>
+                        <svg class="w-5 h-5 text-cyan-400 faq-icon shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-300 text-sm leading-relaxed pb-6">
+                            Realizamos uma rápida análise cadastral do seu CNPJ. Aprovado o projeto, dividimos o investimento com uma entrada de início dos trabalhos e o saldo em boletos bancários faturados conforme os marcos de entrega, permitindo que você pague sem bloquear os cartões de crédito da empresa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none faq-btn">
+                        <span class="font-bold text-white text-base">Por que o código sob medida é superior ao WordPress ou construtores comuns?</span>
+                        <svg class="w-5 h-5 text-cyan-400 faq-icon shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-300 text-sm leading-relaxed pb-6">
+                            Construtores genéricos acumulam centenas de códigos inúteis, deixam o site pesado, vulnerável a invasões e com pontuações baixas no Google. Nossa engenharia em código limpo (Next.js, Tailwind, PWA) garante carregamento quase instantâneo (< 1 segundo), proteção cibernética superior e pontuação 100 no Google PageSpeed, o que reduz custos com anúncios e aumenta conversões.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none faq-btn">
+                        <span class="font-bold text-white text-base">O site já vem preparado para aparecer nas primeiras posições do Google?</span>
+                        <svg class="w-5 h-5 text-cyan-400 faq-icon shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-300 text-sm leading-relaxed pb-6">
+                            Sim! Todo projeto Eleva Digital é construído com arquitetura de SEO On-Page rigorosa: meta tags sociais (OpenGraph), microdados Schema.org, sitemap XML automatizado, tags semânticas e alta velocidade para ranqueamento tanto orgânico geral quanto em buscas locais no Google Maps.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="glass-card rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none faq-btn">
+                        <span class="font-bold text-white text-base">Como é o suporte após o site ser publicado na internet?</span>
+                        <svg class="w-5 h-5 text-cyan-400 faq-icon shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-300 text-sm leading-relaxed pb-6">
+                            Oferecemos garantia de estabilidade total e período de suporte prioritário após o lançamento. Além disso, disponibilizamos planos de sustentação e evolução contínua para adicionar novas integrações, páginas de campanhas e testes de conversão (A/B).
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            <div class="flex gap-10">
-                <a href="#" class="text-slate-500 hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
-                <a href="#" class="text-slate-500 hover:text-white transition"><i class="fab fa-linkedin text-2xl"></i></a>
+        </div>
+    </section>
+
+    <!-- 8. SEÇÃO DE CIDADES / ABRANGÊNCIA NACIONAL (NO FINAL DA PÁGINA) -->
+    <section id="abrangencia" class="py-20 relative z-10 bg-[#040815] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800 text-cyan-300 text-xs font-mono mb-4">
+                    <span>Atendimento Regional & Nacional</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-display tracking-tight text-white">
+                    Abrangência Geográfica e Atendimento Estratégico
+                </h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">
+                    Com base no litoral paulista e infraestrutura 100% digital, atendemos empresas locais de forma presencial/híbrida e corporações em todo o território nacional.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- Região 1 -->
+                <div class="glass-card rounded-2xl p-6 text-center hover:border-cyan-400/40 transition-all">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Mongaguá</h3>
+                    <p class="text-xs text-cyan-400 font-mono mt-1">Sede Regional</p>
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                        Atendimento próximo e reuniões estratégicas para os comércios, clínicas, indústrias e empresas de Mongaguá.
+                    </p>
+                </div>
+
+                <!-- Região 2 -->
+                <div class="glass-card rounded-2xl p-6 text-center hover:border-cyan-400/40 transition-all">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Baixada Santista</h3>
+                    <p class="text-xs text-cyan-400 font-mono mt-1">Praia Grande, Santos e Região</p>
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                        Forte presença em Praia Grande, Santos, São Vicente, Cubatão, Guarujá, Itanhaém e Peruíbe.
+                    </p>
+                </div>
+
+                <!-- Região 3 -->
+                <div class="glass-card rounded-2xl p-6 text-center hover:border-indigo-400/40 transition-all">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Grande São Paulo</h3>
+                    <p class="text-xs text-indigo-400 font-mono mt-1">Capital & Hub Corporativo</p>
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                        Soluções de software de alta performance para o principal ecossistema empresarial e financeiro da América Latina.
+                    </p>
+                </div>
+
+                <!-- Região 4 -->
+                <div class="glass-card rounded-2xl p-6 text-center hover:border-emerald-400/40 transition-all">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Brasil Inteiro</h3>
+                    <p class="text-xs text-emerald-400 font-mono mt-1">Operação Remota Completa</p>
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                        Reuniões por videoconferência, acompanhamento em tempo real e entrega técnica sem fronteiras geográficas.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER CORPORATIVO -->
+    <footer class="bg-[#02040a] text-slate-400 text-xs py-16 border-t border-white/10 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Coluna 1: Marca -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-400 via-indigo-500 to-emerald-400 p-[1px]">
+                            <div class="w-full h-full bg-[#030712] rounded-[7px] flex items-center justify-center">
+                                <svg class="w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline></svg>
+                            </div>
+                        </div>
+                        <span class="font-display font-extrabold text-lg text-white">ELEVA<span class="text-cyan-400">DIGITAL</span></span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Agência de Tecnologia e Engenharia Web de Alta Performance. Criamos ferramentas comerciais digitais que convertem tráfego em receita escalável.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+                        <span class="text-[11px] text-slate-300">Servidores Operando Normal</span>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Navegação Rápida -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Navegação</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#solucoes" class="hover:text-cyan-400 transition-colors">Soluções High-End</a></li>
+                        <li><a href="#diferenciais" class="hover:text-cyan-400 transition-colors">Por Que a Eleva?</a></li>
+                        <li><a href="#metodologia" class="hover:text-cyan-400 transition-colors">Metodologia Ágil</a></li>
+                        <li><a href="#comercial" class="hover:text-cyan-400 transition-colors">Faturamento no Boleto PJ</a></li>
+                        <li><a href="#abrangencia" class="hover:text-cyan-400 transition-colors">Abrangência e Cidades</a></li>
+                        <li><a href="#faq" class="hover:text-cyan-400 transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Soluções Tecnológicas -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Soluções</h4>
+                    <ul class="space-y-2.5">
+                        <li><span class="text-slate-300">Websites Institucionais</span></li>
+                        <li><span class="text-slate-300">PWAs Mobile-First</span></li>
+                        <li><span class="text-slate-300">Plataformas SaaS & Portais</span></li>
+                        <li><span class="text-slate-300">E-commerce de Alta Conversão</span></li>
+                        <li><span class="text-slate-300">Automações de CRM & WhatsApp</span></li>
+                        <li><span class="text-slate-300">SEO Técnico Avançado 100/100</span></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Contato & Canais -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Atendimento Corporativo</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2">
+                            <span class="text-cyan-400">💬</span>
+                            <a href="https://wa.me/551320100006" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-300 font-medium">WhatsApp Comercial</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-indigo-400">✉️</span>
+                            <a href="mailto:contato@elevadigital.tech" class="hover:text-indigo-300 font-medium">contato@elevadigital.tech</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-slate-400">📍</span>
+                            <span>Mongaguá / SP • Atendimento em Todo Brasil</span>
+                        </li>
+                        <li class="pt-2">
+                            <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-cyan-400/40 text-cyan-400 text-xs font-semibold">
+                                Iniciar Conversa no WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+                <p>&copy; 2026 Eleva Digital. Todos os direitos reservados. CNPJ regularizado.</p>
+                <div class="flex items-center gap-4">
+                    <span class="hover:text-slate-300 cursor-pointer" onclick="document.getElementById('cookieBanner').classList.remove('hidden')">Preferências de Cookies</span>
+                    <span>•</span>
+                    <span>Segurança SSL 256-bit</span>
+                </div>
             </div>
         </div>
     </footer>
 
-    <div id="lgpd-banner" class="fixed bottom-0 left-0 w-full z-50 glass-premium !bg-slate-900/90 border-t border-indigo-500/30 p-6 transform translate-y-full transition-transform duration-700 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
-        <div class="text-sm text-slate-300 max-w-4xl text-center md:text-left">
-            <p><strong>Privacidade e Cookies:</strong> A Eleva Digital utiliza cookies para aprimorar sua experiência de navegação, otimizar nossa performance e personalizar conteúdo estratégico. Ao continuar em nosso site, você concorda com a nossa política de privacidade (LGPD).</p>
-        </div>
-        <div class="flex gap-4 shrink-0 w-full md:w-auto justify-center">
-            <button onclick="acceptLGPD()" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold text-[10px] tracking-widest uppercase hover:bg-indigo-500 transition shadow-lg shadow-indigo-600/20 w-full md:w-auto">
-                Aceitar e Continuar
-            </button>
-            <button onclick="declineLGPD()" class="bg-transparent border border-white/20 text-slate-300 px-6 py-3 rounded-full font-bold text-[10px] tracking-widest uppercase hover:bg-white/10 hover:text-white transition w-full md:w-auto">
-                Recusar
-            </button>
+    <!-- 10. COMPONENTES INTERATIVOS -->
+
+    <!-- BANNER LGPD / COOKIES -->
+    <div id="cookieBanner" class="fixed bottom-4 left-4 right-4 sm:left-6 sm:right-auto sm:max-w-md z-50 p-5 rounded-2xl glass-card border border-cyan-500/30 shadow-2xl transition-all duration-300">
+        <div class="flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+            </div>
+            <div class="space-y-3">
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Utilizamos cookies analíticos e essenciais em conformidade com a <strong>LGPD</strong> para aperfeiçoar sua navegação e acelerar nosso contato corporativo.
+                </p>
+                <div class="flex items-center gap-2">
+                    <button id="btnAcceptCookies" class="px-4 py-2 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-black text-xs font-bold transition-all">
+                        Aceitar e Prosseguir
+                    </button>
+                    <button id="btnDeclineCookies" class="px-3 py-2 rounded-lg bg-transparent hover:bg-white/5 text-slate-400 hover:text-white text-xs transition-all">
+                        Apenas Necessários
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script>
-        function handleTriagem(event) {
-            event.preventDefault();
+    <!-- MODAL DE EXIT-INTENT INTELIGENTE -->
+    <div id="exitModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 modal-overlay transition-opacity">
+        <div class="relative w-full max-w-lg rounded-3xl glass-card border border-cyan-400/40 p-6 sm:p-8 text-center shadow-[0_0_50px_rgba(6,182,212,0.3)] animate-pulse-glow">
             
-            const nome = document.getElementById('nome').value;
-            const zap = document.getElementById('whatsapp').value;
-            const fat = document.getElementById('faturamente'); // Corrigido via lógica abaixo
-            const fatVal = parseInt(document.getElementById('faturamente')?.value || 0);
-            const dorVal = parseInt(document.getElementById('dor').value);
-            const msg = document.getElementById('mensagem').value;
-            const cidadeContexto = document.getElementById('hero-city').textContent;
+            <!-- Botão Fechar -->
+            <button id="btnCloseExitModal" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
 
-            // CÁLCULO DE URGÊNCIA (Score de 0 a 10)
-            const score = (parseInt(document.getElementById('faturamente').value) + dorVal);
-            let urgencia = "PADRÃO";
-            let emoji = "🔵";
+            <span class="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono mb-4">
+                Diagnóstico Gratuito Exclusivo
+            </span>
 
-            if(score >= 8) { urgencia = "CRÍTICA / HIGH-TICKET"; emoji = "🔴"; }
-            else if(score >= 5) { urgencia = "ALTA"; emoji = "🟡"; }
+            <h3 class="text-2xl sm:text-3xl font-extrabold font-display text-white">
+                Espere! Não perca clientes para concorrentes lentos.
+            </h3>
 
-            // MONTAGEM DA MENSAGEM PARA O TIME COMERCIAL
-            const textoFinal = `*NOVO LEAD QUALIFICADO - ELEVA DIGITAL*%0A%0A` +
-                `*Status:* ${urgencia} ${emoji}%0A` +
-                `*Cidade:* ${cidadeContexto}%0A%0A` +
-                `*Empresa:* ${nome}%0A` +
-                `*WhatsApp:* ${zap}%0A` +
-                `*Objetivo:* ${msg}%0A%0A` +
-                `_Lead triado via motor de performance Pedro Allan._`;
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Solicite uma análise rápida do seu site ou projeto agora mesmo e receba um dossiê com os <strong>principais gargalos técnicos e oportunidades de conversão</strong> da sua empresa.
+            </p>
 
-            // Envio direto para o WhatsApp do comercial
-            window.open(`https://wa.me/5513992074922?text=${textoFinal}`, '_blank');
-        }
+            <div class="mt-6 flex flex-col gap-3">
+                <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Estou%20saindo%20do%20site%20e%20gostaria%20de%20garantir%20o%20diagn%C3%B3stico%20gratuito%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 via-indigo-500 to-emerald-400 text-black font-extrabold text-sm uppercase tracking-wider hover:opacity-95 transition-all shadow-lg flex items-center justify-center gap-2">
+                    <span>Garantir Diagnóstico Gratuito</span>
+                </a>
+                <button id="btnDismissExitModal" class="text-xs text-slate-400 hover:text-slate-200 py-1">
+                    Continuar navegando no site
+                </button>
+            </div>
+        </div>
+    </div>
 
-        // SEO DINÂMICO
-        function injectSEO() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const city = urlParams.get('cidade') || urlParams.get('utm_term');
+    <!-- BOTÃO FLUTUANTE WHATSAPP COM EFEITO DE PULSO -->
+    <a href="https://wa.me/551320100006?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Eleva%20Digital%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shadow-[0_0_25px_rgba(16,185,129,0.5)] transition-transform duration-300 hover:scale-110 active:scale-95 group">
+        <!-- Onda de pulso -->
+        <span class="absolute inset-0 rounded-full bg-emerald-400 animate-ping opacity-30 group-hover:opacity-50"></span>
+        <svg class="w-7 h-7 fill-white relative z-10" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
 
-            const applyTexts = (cityName) => {
-                const name = cityName.charAt(0).toUpperCase() + cityName.slice(1).replace(/-/g, ' ');
-                document.getElementById('hero-city').textContent = `em ${name}`;
-                document.getElementById('city-form').textContent = `em ${name}`;
-                document.getElementById('city-text-alt').textContent = `em ${name} e região`;
-                document.title = `Especialista em Sites em ${name} | Eleva Digital`;
-                document.getElementById('dynamic-title').innerText = `Sites em ${name} | Eleva Digital`;
-                document.getElementById('dynamic-desc').setAttribute("content", `Criação de sites profissionais em ${name}. Performance 100/100 e SEO regional liderado por Pedro Allan.`);
+    <!-- SCRIPT PURO COM INTERATIVIDADE COMPLETA -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. MOBILE DRAWER NAVIGATION
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileDrawer = document.getElementById('mobileDrawer');
+            if (mobileMenuBtn && mobileDrawer) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileDrawer.classList.toggle('hidden');
+                });
+                mobileDrawer.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileDrawer.classList.add('hidden');
+                    });
+                });
+            }
+
+            // 2. FAQ ACCORDION INTERATIVO
+            const faqItems = document.querySelectorAll('#faqAccordion .glass-card');
+            faqItems.forEach(item => {
+                const btn = item.querySelector('.faq-btn');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+
+                btn.addEventListener('click', () => {
+                    const isOpen = answer.classList.contains('open');
+
+                    // Fecha outros itens
+                    document.querySelectorAll('.faq-answer').forEach(el => el.classList.remove('open'));
+                    document.querySelectorAll('.faq-icon').forEach(el => el.classList.remove('rotate'));
+
+                    if (!isOpen) {
+                        answer.classList.add('open');
+                        icon.classList.add('rotate');
+                    }
+                });
+            });
+
+            // 3. LGPD COOKIE CONSENT COM LOCALSTORAGE
+            const cookieBanner = document.getElementById('cookieBanner');
+            const btnAcceptCookies = document.getElementById('btnAcceptCookies');
+            const btnDeclineCookies = document.getElementById('btnDeclineCookies');
+            const CONSENT_KEY = 'eleva_lgpd_consent_v2';
+
+            if (localStorage.getItem(CONSENT_KEY)) {
+                cookieBanner.classList.add('hidden');
+            }
+
+            if (btnAcceptCookies) {
+                btnAcceptCookies.addEventListener('click', () => {
+                    localStorage.setItem(CONSENT_KEY, 'accepted');
+                    cookieBanner.classList.add('hidden');
+                });
+            }
+
+            if (btnDeclineCookies) {
+                btnDeclineCookies.addEventListener('click', () => {
+                    localStorage.setItem(CONSENT_KEY, 'declined');
+                    cookieBanner.classList.add('hidden');
+                });
+            }
+
+            // 4. SMART EXIT-INTENT MODAL
+            const exitModal = document.getElementById('exitModal');
+            const btnCloseExitModal = document.getElementById('btnCloseExitModal');
+            const btnDismissExitModal = document.getElementById('btnDismissExitModal');
+            let exitModalTriggered = false;
+
+            const showExitModal = () => {
+                if (exitModalTriggered) return;
+                const modalSeen = sessionStorage.getItem('eleva_exit_modal_shown_v2');
+                if (!modalSeen) {
+                    exitModal.classList.remove('hidden');
+                    exitModalTriggered = true;
+                    sessionStorage.setItem('eleva_exit_modal_shown_v2', 'true');
+                }
             };
 
-            if (city) {
-                applyTexts(city);
-            } else {
-                fetch('https://ipapi.co/json/')
-                    .then(res => res.json())
-                    .then(data => { if (data.city) applyTexts(data.city); })
-                    .catch(() => {});
-            }
-        }
+            const hideExitModal = () => {
+                exitModal.classList.add('hidden');
+            };
 
-        // LGPD LOGIC
-        function initLGPD() {
-            const lgpdBanner = document.getElementById('lgpd-banner');
-            if (!localStorage.getItem('lgpd_accepted')) {
-                // Adiciona um pequeno delay para a animação de subida ficar natural
-                setTimeout(() => {
-                    lgpdBanner.classList.remove('translate-y-full');
-                }, 1000);
-            }
-        }
+            // Disparo no desktop ao mover o mouse para fora da viewport superior
+            document.addEventListener('mouseleave', (e) => {
+                if (e.clientY <= 0) {
+                    showExitModal();
+                }
+            });
 
-        function acceptLGPD() {
-            localStorage.setItem('lgpd_accepted', 'true');
-            document.getElementById('lgpd-banner').classList.add('translate-y-full');
-        }
+            // Disparo alternativo por tempo (50s)
+            setTimeout(() => {
+                showExitModal();
+            }, 50000);
 
-        function declineLGPD() {
-            localStorage.setItem('lgpd_accepted', 'false');
-            document.getElementById('lgpd-banner').classList.add('translate-y-full');
-        }
+            if (btnCloseExitModal) btnCloseExitModal.addEventListener('click', hideExitModal);
+            if (btnDismissExitModal) btnDismissExitModal.addEventListener('click', hideExitModal);
+            exitModal.addEventListener('click', (e) => {
+                if (e.target === exitModal) hideExitModal();
+            });
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-        }, { threshold: 0.1 });
+            // 5. NAVBAR SCROLL EFFECT
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    navbar.classList.add('bg-[#030712]/95', 'shadow-lg');
+                } else {
+                    navbar.classList.remove('bg-[#030712]/95', 'shadow-lg');
+                }
+            });
 
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-        
-        document.addEventListener('DOMContentLoaded', () => {
-            injectSEO();
-            initLGPD();
         });
     </script>
 </body>
